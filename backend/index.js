@@ -19,6 +19,10 @@ const corsOptions ={
     credentials:true
 };
 
+app.get('/',function(req,res){
+    res.json("Hello");
+});
+
 
 app.use('*',function(req,res){
 res.sendFile(path.join(__dirname,'./frontend/build/index.html'));
