@@ -16,7 +16,7 @@ const FeaturedTourList = () => {
           <TourCard tour={tour}/>
         </Col>
       )
-    };
+    }
     </>
   );
 };

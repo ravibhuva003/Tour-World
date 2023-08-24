@@ -70,7 +70,7 @@ const Header = () => {
                       <li className="nav__item " key={index}>
                         <NavLink to={item.path} 
                         className={navClass => 
-                          navClass.isActive ? "active__link" : ""
+                          navClass.isActive ? "active" : " "
                         }
                         >
                           {item.display}
@@ -86,16 +86,31 @@ const Header = () => {
               <div className="nav__btns d-flex align-items-center gap-4">
                { user ? 
                <>
+               <Button className="btn primary__btn">
+                  <a href="https://citydata.netlify.app/" target="_blank" rel="noopener noreferrer">
+                    Information
+                  </a>
+                  </Button> 
                <h5 className="mb-0">{user.username}</h5>
                     <Button className="btn btn-dark" onClick={logout}>Logout</Button>
                 </> :
                 <>
-                  <Button className="btn secondary__btn">
+
+                
+                  <Button className="btn primary__btn">
                   <Link to="/login">Login</Link>
                   </Button>
 
+                 
+
                   <Button className="btn primary__btn">
                   <Link to="/register">Register</Link>
+                  </Button>
+
+                  <Button className="btn primary__btn">
+                  <a href="https://citydata.netlify.app/" target="_blank" rel="noopener noreferrer">
+                    Information
+                  </a>
                   </Button>
                   </>
                 }

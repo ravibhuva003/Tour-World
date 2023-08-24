@@ -139,7 +139,7 @@ experience__content p{
     scroll-behavior: smooth;
 }  
 
-/* @media only screen and (min-width: 992px) {
+@media only screen and (max-width: 992px) {
     .hero__content h1{
         font-size: 2.7rem;
     }
@@ -161,7 +161,7 @@ experience__content p{
     }
 }
 
-@media only screen and (min-width: 576px) {
+@media only screen and (max-width: 576px) {
     .hero__content h1{
         font-size: 1.8rem;
     }
@@ -169,4 +169,4 @@ experience__content p{
     .services__title, .featured__tour-title,.gallery__title,.testimonial__title, .experience__content h2{
         font-size: 1.5rem;
     }
-} */
+}

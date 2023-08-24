@@ -87,7 +87,7 @@ ul {
 }
 
 
-/* @media only screen and (min-width: 992px) {
+@media only screen and (max-width: 992px) {
   .primary__btn a, .secondary__btn a{
     font-size: 0.9rem;
   }
@@ -105,4 +105,4 @@ ul {
   .section__subtitle{
     font-size: 1.3rem;
   }
-} */
+}

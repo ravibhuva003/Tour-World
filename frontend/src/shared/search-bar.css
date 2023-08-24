@@ -54,7 +54,7 @@
     font-weight: 500;
 }
 
-/* @media only screen and (min-width: 992px) {
+@media only screen and (max-width: 992px) {
     .search__bar{
         width: 100%;
         border-radius: 2rem;
@@ -69,7 +69,7 @@
     }
 }
 
-@media only screen and (min-width: 576px) {
+@media only screen and (max-width: 576px) {
     .search__bar form .form__group{
         width: 100%;
     }
@@ -85,4 +85,4 @@
     .form__group h6{
         font-size: 1rem;
     }
-} */
+}

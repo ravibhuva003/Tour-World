@@ -49,7 +49,7 @@
     font-size: 1.1rem;
 }
 
-/* @media only screen and (min-width: 992px) {
+@media only screen and (max-width: 992px) {
     .newsletter__content h2{
         font-size: 2rem;
     }
@@ -59,18 +59,12 @@
     }
 }
 
-@media only screen and (min-width: 576px) {
+@media only screen and (max-width: 576px) {
     .newsletter__content h2{
         font-size: 1.5rem;
-    }
-
-    
-
-    .newsletter__content p{
-        display: none;
     }
 
     .newsletter__img{
         display: none;
     }
-} */
+}

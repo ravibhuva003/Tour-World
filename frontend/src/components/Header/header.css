@@ -10,6 +10,7 @@
 
 .menu{
     margin-bottom: 0;
+    margin-left: -25%;
 }
 
 .nav__item a{
@@ -42,11 +43,11 @@
     top: 0;
     left: 0;
     box-shadow: 3px 3px 8px #ddd;
-    z-index: 999;
+    z-index: 999; 
 }
 
 
-/* @media only screen and (min-width: 992px){
+@media only screen and (max-width: 992px){
     .logo img{
         width: 20%;
     }
@@ -70,12 +71,12 @@
         height: 100%;
         background: #fff;
         flex-direction: column;
-        line-height: 0.05rem;
+        line-height: 0.5rem;
         justify-content: center;
         z-index: 9999;
     }
 
-    .show_menu {
+    .show__menu {
         display: block;
     }
 
@@ -84,7 +85,7 @@
     }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
     .logo img{
         width: 45%;
     }
@@ -92,4 +93,4 @@
     .menu{
         width: calc(100% - 50%);
     }
-} */
+}

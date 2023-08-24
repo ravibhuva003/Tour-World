@@ -29,7 +29,7 @@ export const Home = () => {
                 <img src={worldImg} alt="" />
               </div>
               <h1>Traveling open the door to creating <span className="highlight">memories</span></h1>
-              <p>The TourWorld leverages the power of the MERN stack to create a comprehensive tour management platform that benefits both tour operators and customers. Its intuitive user interface, real-time features, and seamless booking process make it an essential tool for the modern travel and tourism industry.</p>
+              <p>The City Data Analysis leverages the power of the MERN stack to create a comprehensive and informative tour management platform that benefits both tour operators and customers. Its intuitive user interface, real-time features, and seamless booking process make it an essential tool for the modern travel and tourism industry.</p>
             </div>
           </Col>
           <Col lg="2">

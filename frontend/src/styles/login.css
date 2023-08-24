@@ -75,7 +75,7 @@
     font-weight: 500;
 }
 
-/* @media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
     .login__img{
         display: none;
     }
@@ -86,12 +86,12 @@
     }
 
     .login__container{
-        padding-bottom: 3rem;
+        padding-bottom:3rem;
         margin-top: 70px;
     }
 }
 
-@media only screen and (min-width: 576px) {
+@media only screen and (max-width: 576px) {
     .login__form{
         width: 100%;
     }
@@ -99,4 +99,4 @@
     .login__container{
         padding-bottom: 1rem;
     }
-} */
+}
