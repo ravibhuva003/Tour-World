@@ -1,5 +1,5 @@
 
-export const BASE_URL = 'https://tour-world.vercel.app/';
+export const BASE_URL = 'https://localhost:3000/';
 
 
 
