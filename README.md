@@ -1,2 +1,2 @@
-#Tour World
-[toursworld.netlify.app](https://toursworld.netlify.app/)https://toursworld.netlify.app/
+# Tour World
+https://toursworld.netlify.app/
