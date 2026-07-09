@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Island+Moments&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #f75c03; /* Vibrant orange */
+  --secondary-color: #fca311; /* Vibrant yellow/orange */
+  --accent-color: #3f37c9; /* Deep indigo accent */
+  --heading-color: #0d1b2a; /* Deep dark blue for text */
+  --text-color: #415a77; /* Softer slate gray/blue for body text */
+  --bg-color: #f8f9fa; /* Light background */
+  --font-name: "Outfit", sans-serif;
+  --subtitle-font-name: "Island Moments", cursive;
+
+  /* Glassmorphism Variables */
+  --glass-bg: rgba(255, 255, 255, 0.65);
+  --glass-border: rgba(255, 255, 255, 0.4);
+  --glass-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-name);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  overflow-x: hidden;
+}
+
+section {
+  padding: 80px 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--heading-color);
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+  transition: all 0.3s ease;
+}
+
+ul {
+  list-style: none;
+}
+
+.primary__btn {
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%) !important;
+  border: none !important;
+  border-radius: 50px !important;
+  padding: 0.6rem 2rem !important;
+  transition: all 0.3s ease !important;
+  box-shadow: 0 4px 15px rgba(247, 92, 3, 0.3) !important;
+}
+
+.primary__btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(247, 92, 3, 0.4) !important;
+}
+
+.primary__btn a {
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
+
+.primary__btn a:hover {
+  color: #fff;
+}
+
+.secondary__btn {
+  background: transparent !important;
+  color: var(--heading-color) !important;
+  border: 2px solid var(--heading-color) !important;
+  border-radius: 50px !important;
+  font-weight: 600 !important;
+  padding: 0.5rem 1.8rem !important;
+  transition: all 0.3s ease !important;
+}
+
+.secondary__btn a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: var(--heading-color);
+}
+
+.secondary__btn:hover {
+  background: var(--heading-color) !important;
+  color: #fff !important;
+}
+
+.secondary__btn:hover a {
+  color: #fff;
+}
+
+.section__subtitle {
+  background: linear-gradient(90deg, rgba(252,163,17,0.2) 0%, rgba(247,92,3,0.1) 100%);
+  font-family: var(--subtitle-font-name);
+  width: max-content;
+  padding: 0.2rem 1.2rem;
+  border-radius: 50px;
+  font-weight: 500;
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+/* Glassmorphism Utility Class */
+.glass-panel {
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--glass-shadow);
+  border-radius: 20px;
+}
+
+@media only screen and (max-width: 992px) {
+  .primary__btn a, .secondary__btn a {
+    font-size: 0.95rem;
+  }
+
+  .primary__btn, .secondary__btn, .btn-dark {
+    padding: 0.4rem 1.2rem !important;
+  }
+
+  section {
+    padding: 50px 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .section__subtitle {
+    font-size: 2.2rem;
+  }
+}
